@@ -1,6 +1,9 @@
 import { Router } from 'express'
+import api from './api'
 
 const router = new Router()
+
+router.use('/api', api)
 
 /**
  * @apiDefine master Master access only
